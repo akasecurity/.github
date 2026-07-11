@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=640, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <title>AI-TC Security Monitor</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body { width: 640px; height: 360px; margin: 0; overflow: hidden; }
+    body { background: #161e27; font-family: "Geist Mono", monospace; }
+    .monitor {
+      width: 640px; height: 360px; padding: 22px;
+      color: #f6f8f9; background: #161e27; border: 1px solid #232f3e;
+      border-radius: 14px; display: flex; flex-direction: column;
+    }
+    .topbar { height: 40px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #232f3e; }
+    .brand { display: flex; align-items: center; gap: 9px; font-size: 14px; font-weight: 600; letter-spacing: -.02em; }
+    .shield { width: 15px; height: 17px; color: #00e0b8; }
+    .state { font-size: 11px; color: #00e0b8; letter-spacing: -.03em; }
+    .feed { flex: 1; display: flex; flex-direction: column; justify-content: center; gap: 8px; padding: 16px 0; }
+    .row { min-height: 31px; padding: 0 10px; display: grid; grid-template-columns: 74px 1fr auto; align-items: center; gap: 10px; background: #1c2735; border: 1px solid rgba(35, 47, 62, .8); border-radius: 7px; font-size: 12px; }
+    .verb { color: #f6f8f9; }
+    .arg { color: #8ca0b3; white-space: nowrap; }
+    .pill { padding: 3px 7px; border-radius: 999px; font-size: 10px; line-height: 1.2; }
+    .protected { color: #00e0b8; background: rgba(0, 224, 184, .1); }
+    .blocked { color: #f76f68; background: rgba(247, 111, 104, .1); }
+    .allow { color: #8ca0b3; background: rgba(140, 160, 179, .1); }
+    footer { min-height: 35px; padding-top: 13px; border-top: 1px solid #232f3e; color: #8ca0b3; font-size: 10px; line-height: 1.25; letter-spacing: -.035em; }
+  </style>
+</head>
+<body>
+  <main class="monitor" aria-label="ai-tc security monitor">
+    <header class="topbar">
+      <div class="brand"><svg class="shield" viewBox="0 0 16 18" fill="none" aria-hidden="true"><path d="M8 1.25 14 3.7v4.13c0 3.92-2.5 6.72-6 8.92-3.5-2.2-6-5-6-8.92V3.7L8 1.25Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="m5.45 8.85 1.55 1.55 3.55-3.55" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>ai-tc</span></div>
+      <span class="state">data: protected</span>
+    </header>
+    <section class="feed" aria-label="Protection events">
+      <div class="row"><span class="verb">detect</span><span class="arg">pci/card-number</span><span class="pill protected">protected</span></div>
+      <div class="row"><span class="verb">detect</span><span class="arg">phi/patient-record</span><span class="pill protected">protected</span></div>
+      <div class="row"><span class="verb">egress</span><span class="arg">untrusted model API</span><span class="pill blocked">blocked</span></div>
+      <div class="row"><span class="verb">read</span><span class="arg">src/api/webhooks.ts</span><span class="pill allow">allow</span></div>
+    </section>
+    <footer>PCI · PHI · PII never reach a model or a third party.</footer>
+  </main>
+</body>
+</html>
