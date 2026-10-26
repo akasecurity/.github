@@ -1,9 +1,15 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.png">
-  <img alt="AKA Security, the security layer for AI agents" src="assets/hero-light.png" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/cover-dark.svg">
+  <img src="assets/cover-light.svg" alt="AKA Security on GitHub. Illustration: a map of one road network joining the ai-tc toll plaza, the claude-tools depot, the preflight-skills checkpoint, the oupdate holding yard and the marketplace gantry." width="100%">
 </picture>
 
-# AKA Security
+<p align="center">
+  <a href="#projects"><b>Projects</b></a> &nbsp;·&nbsp;
+  <a href="#install"><b>Install</b></a> &nbsp;·&nbsp;
+  <a href="https://akasecurity.io"><b>akasecurity.io</b></a>
+</p>
+
+<h3 align="center">Security tooling and safe defaults for coding agents.</h3>
 
 Sensitive-data detection and protection for every tool call, MCP server, and RAG pipeline.
 
@@ -18,10 +24,13 @@ Sensitive-data detection and protection for every tool call, MCP server, and RAG
 
 ## Projects
 
-- **[AI Traffic Control](https://github.com/akasecurity/ai-tc)** (`ai-tc`) — guardrails for the agent harness: regulated data stays on your machine, and every prompt and tool call is scanned before it runs. ![Community](https://img.shields.io/badge/Community-232F3E?style=flat-square) ![Enterprise](https://img.shields.io/badge/Enterprise-00E0B8?style=flat-square&labelColor=232F3E)
-- **[claude-tools](https://github.com/akasecurity/claude-tools)** (`aka-claude-tools`) — the security defaults Claude Code doesn't ship with: clean context, locked-down credentials, guarded egress, layered onto an isolated profile. ![Community](https://img.shields.io/badge/Community-232F3E?style=flat-square)
-- **[preflight-skills](https://github.com/akasecurity/preflight-skills)** (`preflight`) — a second opinion before you merge: an independent multi-model review crew for coding agents. Report-only, cross-family. Also ships `secure-research`, cited web research spread across several search engines. ![Community](https://img.shields.io/badge/Community-232F3E?style=flat-square)
-- **[marketplace](https://github.com/akasecurity/marketplace)** — one place to install every AKA Security tool, across Claude Code, Codex, and more.
+| Project | What it is |
+|---|---|
+| **[AI Traffic Control](https://github.com/akasecurity/ai-tc)** (`ai-tc`) | Guardrails for the agent harness: regulated data stays on your machine, and every prompt and tool call is scanned before it runs. ![Community](https://img.shields.io/badge/Community-232F3E?style=flat-square) ![Enterprise](https://img.shields.io/badge/Enterprise-00E0B8?style=flat-square&labelColor=232F3E) |
+| **[claude-tools](https://github.com/akasecurity/claude-tools)** (`aka-claude-tools`) | The security defaults Claude Code doesn't ship with: clean context, locked-down credentials, guarded egress, layered onto an isolated profile. ![Community](https://img.shields.io/badge/Community-232F3E?style=flat-square) |
+| **[preflight-skills](https://github.com/akasecurity/preflight-skills)** (`preflight`) | A second opinion before you merge: an independent multi-model review crew for coding agents. Report-only, cross-family. Also ships `secure-research`, cited web research spread across several search engines. ![Community](https://img.shields.io/badge/Community-232F3E?style=flat-square) |
+| **[oupdate](https://github.com/akasecurity/oupdate)** | Recurring, gated dependency updates for a fleet of hosts: supply-chain review before anything is applied. |
+| **[marketplace](https://github.com/akasecurity/marketplace)** | One place to install every AKA Security tool, across Claude Code, Codex, and more. |
 
 ## Install
 
