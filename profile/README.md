@@ -16,7 +16,7 @@ Sensitive-data detection and protection for every tool call, MCP server, and RAG
 ![Open source](https://img.shields.io/badge/Open_source-232F3E?style=flat-square)
 ![Local](https://img.shields.io/badge/Local-232F3E?style=flat-square)
 ![Auditable](https://img.shields.io/badge/Auditable-232F3E?style=flat-square)
-[![akasecurity.io](https://img.shields.io/badge/akasecurity.io-00E0B8?style=flat-square&labelColor=232F3E)](https://akasecurity.io)
+[![akasecurity.io](https://img.shields.io/badge/akasecurity.io-00E0B8?style=flat-square)](https://akasecurity.io)
 
 <p>
   <img alt="ai-tc: PCI, PHI, and PII never reach a model or a third party" src="assets/monitor.png" width="520">
@@ -26,7 +26,7 @@ Sensitive-data detection and protection for every tool call, MCP server, and RAG
 
 | Project | What it is |
 |---|---|
-| **[AI Traffic Control](https://github.com/akasecurity/ai-tc)** (`ai-tc`) | Guardrails for the agent harness: regulated data stays on your machine, and every prompt and tool call is scanned before it runs. ![Community](https://img.shields.io/badge/Community-232F3E?style=flat-square) ![Enterprise](https://img.shields.io/badge/Enterprise-00E0B8?style=flat-square&labelColor=232F3E) |
+| **[AI Traffic Control](https://github.com/akasecurity/ai-tc)** (`ai-tc`) | Guardrails for the agent harness: regulated data stays on your machine, and every prompt and tool call is scanned before it runs. ![Community](https://img.shields.io/badge/Community-232F3E?style=flat-square) ![Enterprise](https://img.shields.io/badge/Enterprise-00E0B8?style=flat-square) |
 | **[claude-tools](https://github.com/akasecurity/claude-tools)** | The security defaults Claude Code doesn't ship with: clean context, locked-down credentials, guarded egress, layered onto an isolated profile. ![Community](https://img.shields.io/badge/Community-232F3E?style=flat-square) |
 | **[preflight-skills](https://github.com/akasecurity/preflight-skills)** (`preflight`) | A second opinion before you merge: an independent multi-model review crew for coding agents. Report-only, cross-family. Also ships `secure-research`, cited web research spread across several search engines. ![Community](https://img.shields.io/badge/Community-232F3E?style=flat-square) |
 | **[oupdate](https://github.com/akasecurity/oupdate)** | Recurring, gated dependency updates for a fleet of hosts: supply-chain review before anything is applied. |
