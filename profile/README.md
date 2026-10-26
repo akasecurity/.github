@@ -40,7 +40,7 @@ Claude Code and Codex install from one marketplace — **[akasecurity/marketplac
 # Claude Code
 /plugin marketplace add akasecurity/marketplace
 /plugin install preflight@akasecurity
-/plugin install claude-tools@akasecurity
+/plugin install aka-claude-tools@akasecurity
 /plugin install ai-tc@akasecurity
 
 # Codex
